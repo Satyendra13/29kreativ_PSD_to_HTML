@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
@@ -25,7 +20,8 @@
 <body>
 
 
-    <div class="container">
+    <div class="content_container">
+        <!-- top navbar start -->
         <div class="top_section">
             <div class="top_header">
                 <div class="left_top_header">
@@ -39,133 +35,76 @@
                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </div>
                 <div class="right_top_header">
-                    <i class="material-icons-round right_top_header_material_icon">account_circle</i> 
-                    <a href="#">
-                        SIGN IN</a>
-                    <div class="vertical_line"></div>
-                    <i class="material-icons-outlined right_top_header_material_icon" > language </i> 
-                    <a href="#" >
-                        ENG 
+                    <a href="#" class="right_top_header_sigin">
+                        <i class="material-icons-round right_top_header_material_icon">account_circle</i> 
+                        SIGN  IN
                     </a>
-                        <i class="material-icons-outlined right_top_header_material_icon">keyboard_arrow_down</i>
+                    <div class="vertical_line"></div>
+                    <a href="#" class="top_header_language">
+                        <i class="material-icons-outlined right_top_header_material_icon"> language </i> 
+                        ENG 
+                        <i class="material-icons-outlined right_top_header_material_down_arrow_icon">keyboard_arrow_down</i>
+                    </a>
                 </div>
             </div>
         </div>
+        <!-- top navbar end -->
 
-
-
-
-
-
-
-
-
-        <!-- <div class="social_icons">
-            <ul class="icons">
-                <li style="margin-left: 0;">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li class="right-float">
-                    <a href="#" ><span class="material-icons-outlined" > language </span> ENG <span class="material-icons-outlined">
-                        keyboard_arrow_down
-                        </span></a>
-                </li>
-                <li class="right-float">
-                    <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i> SIGNIN</a>
-                </li>
-            </ul>
-        </div> -->
-
-        <!-- header -->
-
-        <div class="header">
-            <nav>
-                <div class="logo">
-                    <a href="#"><h1>PASCO</h1></a>
-                </div>
-                <div class="menu">
-                        <a href="#">HOME <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">PORTFOLIO <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">BLOG <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">PAGES <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">SHOP <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">COMPONENTS <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-    
-                        <a href="#">FEATURES <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </div>
-                <div class="menu_icon">
-                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-
-                    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-
-                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-                </div>
-            </nav>
-
-            <div class="title">
-                <h3>INSPIRATION</h3>
-                <H1 style="margin-top: 29px;">5 WAYS MILLLENNIALS CAN START BUILDING THEIR FURURE TODAY</H1>
-                <button class="btn">READ MORE</button>
-                <div class="profile">
-                    <img src="./assests/Photo.png" class="profile_img" alt="user_profile">
-                    <h4>Henry Little</h4>
-                    <p>April 28, 2016 &nbsp 10:15</p>
-                    <div class="profile_icons">
-                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <!-- header start -->
+        <div class="header_section">
+            <div class="header_section_background">
+                <nav class="header_section_navbar">
+                    <div class="header_section_navbar_logo">
+                        <a href="#"><h1>PASCO</h1></a>
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    
-    <!-- <div class="container">
+                    <div class="header_section_navbar_menu">
+                            <a href="#">HOME <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
         
-                
-                <div class="title">
-                    <h3>INSPIRATION</h3>
-                    <H1 style="margin-top: 29px;">5 WAYS MILLLENNIALS CAN START BUILDING THEIR FURURE TODAY</H1>
-                    <button type="button">READ MORE</button>
-                    <div>
-                        <img src="" alt="user_profile">
+                            <a href="#">PORTFOLIO <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+        
+                            <a href="#">BLOG <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+        
+                            <a href="#">PAGES <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+        
+                            <a href="#">SHOP <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+        
+                            <a href="#">COMPONENTS <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+        
+                            <a href="#">FEATURES <i class="material-icons-outlined header_section_navbar_menu_icon">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="header_section_menu_icon">
+                        <a href="#"><i class="material-icons-round">
+                            search
+                            </i></a>
+                        <div class="header_vertical_line"></div>
+                        <a href="#"><i class="material-icons-round">
+                            favorite_border
+                            </i></a>
+                        <div class="header_vertical_line"></div>
+                        <a href="#"><i class="material-icons-round">
+                            shopping_cart
+                            </i></a>
+                    </div>
+                </nav>
+    
+                <div class="header_section_title">
+                    <p>INSPIRATION</p>
+                    <H1>5 WAYS MILLLENNIALS CAN START BUILDING THEIR FURURE TODAY</H1>
+                    <button class="header_section_btn">READ MORE</button>
+                    <div class="header_section_profile">
+                        <img src="./assests/Photo.png" class="header_section_profile_img" alt="user_profile">
                         <h4>Henry Little</h4>
-                        <div>
+                        <p>April 28, 2016 &nbsp 10:15</p>
+                        <div class="header_section_profile_icons">
                             <a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a>
                             <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-    </div> -->
+        </div>
+        <!-- header end -->
+    </div>
 </body>
 
 </html>
